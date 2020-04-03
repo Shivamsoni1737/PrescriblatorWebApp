@@ -50,10 +50,32 @@ h6 {
 button {
     border: none;
 }
-.personal-form {
+.form {
+    background-color: pink;
     border: ridge 1px grey;
 }
 input,label {
     padding: 4px 0 0 4px;
+}
+.align-blue {
+    text-align: center;
+}
+.bluesubmit {
+    background-color: blue;
+    color: white;
+    border: solid blue;
+    border-radius: 20px;
+    height: 50px;
+    margin: auto;
+}
+.footer {
+    margin: 0px;
+    padding-left: 8%;
+    background-color: blueviolet;
+}
+.foter {
+    padding: 0px;
+    margin: 0px;
+    color: white;
 }
 }
