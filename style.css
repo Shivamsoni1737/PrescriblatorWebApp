@@ -14,20 +14,6 @@ li {
     padding-top: 16px;
     list-style-type: none;
 }
-.main {
-    color: gray;
-}
-.righticon {
-    float: none;
-    justify-content: flex-end;
-}
-.leftnav {
-    float: left;
-    justify-content: flex-start;
-}
-header {
-    min-width: 650px;
-}
 .sectionform {
     margin: 40px 4%;
     width: 60%;
