@@ -14,7 +14,7 @@ var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEv
 /* medicene names picked up from:
 https://github.com/openhealthcare/open-formulary
 */
-var medicenes = ["Ciprofloxacin", "Topal_Antacid Tab", "Buscopan_Tab", "Peppermint Oil", "Ranitidine", "Sucralfate_Tab"];
+var medicenes = ["Ciprofloxacin", "Topal Antacid Tab", "Buscopan Tab", "Peppermint Oil", "Ranitidine", "Sucralfate Tab"];
 
 /*
 Refer to this while making a grammar: https://www.w3.org/TR/jsgf/
