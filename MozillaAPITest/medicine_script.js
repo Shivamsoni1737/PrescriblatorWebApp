@@ -11,15 +11,15 @@ var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
 var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
 var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
 
-/* medicene names picked up from:
+/* medicine names picked up from:
 https://github.com/openhealthcare/open-formulary
 */
-var medicenes = ["Ciprofloxacin", "Topal_Antacid Tab", "Buscopan_Tab", "Peppermint Oil", "Ranitidine", "Sucralfate_Tab"];
+var medicines = ["Ciprofloxacin", "Topal Antacid Tab", "Buscopan Tab", "Peppermint Oil", "Ranitidine", "Sucralfate Tab"];
 
 /*
 Refer to this while making a grammar: https://www.w3.org/TR/jsgf/
 */
-var grammar = '#JSGF V1.0; grammar colors; public <Medicenes> = ' + medicenes.join('|') + ';'
+var grammar = '#JSGF V1.0; grammar colors; public <medicines> = ' + medicines.join('|') + ';'
 
 var recognition = new SpeechRecognition();
 var speechRecognitionList = new SpeechGrammarList();
@@ -34,24 +34,24 @@ var diagnostic = document.querySelector('.output');
 var bg = document.querySelector('html');
 var hints = document.querySelector('.hints');
 
-var mediceneHTML = ''
+var medicineHTML = ''
 
-medicenes.forEach(function(v, i, a) {
+medicines.forEach(function(v, i, a) {
     console.log(v, i);
-    mediceneHTML += '<span style> ' + v + '&emsp;' + ' </span>';
+    medicineHTML += '<span style> ' + v + '&emsp;' + ' </span>';
 
     document.body.onclick = function() {
         recognition.start();
-        console.log('Ready to receive a Medicene Name');
+        console.log('Ready to receive a medicine Name');
     }
 });
 
 
-hints.innerHTML = 'Tap/click then say a medicene Name <br><br>' + mediceneHTML + '.';
+hints.innerHTML = 'Tap/click any where on the page then say a medicine Name <br><br>' + medicineHTML + '.';
 
 recognition.onresult = function(event) {
-    var medicene = event.results[0][0].transcript;
-    diagnostic.textContent = 'Medicene Name heard: ' + medicene + '.';
+    var medicine = event.results[0][0].transcript;
+    diagnostic.textContent = 'medicine Name heard: ' + medicine + '.';
     console.log('Confidence: ' + event.results[0][0].confidence);
 }
 
@@ -60,7 +60,7 @@ recognition.onspeechend = function() {
 }
 
 recognition.onnomatch = function(event) {
-    diagnostic.textConternt = "I didn't recognize that medicene,";
+    diagnostic.textConternt = "I didn't recognize that medicine,";
 }
 
 recognition.onerror = function(event) {
