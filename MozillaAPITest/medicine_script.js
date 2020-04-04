@@ -47,7 +47,7 @@ medicines.forEach(function(v, i, a) {
 });
 
 
-hints.innerHTML = 'Tap/click then say a medicine Name <br><br>' + medicineHTML + '.';
+hints.innerHTML = 'Tap/click any where on the page then say a medicine Name <br><br>' + medicineHTML + '.';
 
 recognition.onresult = function(event) {
     var medicine = event.results[0][0].transcript;
