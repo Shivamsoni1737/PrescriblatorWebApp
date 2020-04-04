@@ -6,10 +6,10 @@ https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Sp
 
 
 */
-var SpeechRecogniton = SpeechRecognition || webkitSpeechRecognition
+
+var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
 var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
 var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
-
 
 /* medicene names picked up from:
 https://github.com/openhealthcare/open-formulary
@@ -19,15 +19,13 @@ var medicenes = ["Topal_Antacid Tab", "Buscopan_Tab", "Peppermint Oil", "Ranitid
 /*
 Refer to this while making a grammar: https://www.w3.org/TR/jsgf/
 */
-var grammar = '#JSGF V1.0; grammar colors; public <Medicenes> = ' + medicenes.join('|') + ';'.
+var grammar = '#JSGF V1.0; grammar colors; public <Medicenes> = ' + medicenes.join('|') + ';'
 
 var recognition = new SpeechRecognition();
 var speechRecognitionList = new SpeechGrammarList();
-
 speechRecognitionList.addFromString(grammar, 1);
-
 recognition.grammars = speechRecognitionList;
-recognition.continious = false;
+recognition.continuous = false;
 recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
@@ -38,15 +36,18 @@ var hints = document.querySelector('.hints');
 
 var mediceneHTML = ''
 
-medicene.forEach(function(v, i, a)) {
+medicenes.forEach(function(v, i, a) {
     console.log(v, i);
-    mediceneHTML += '<span style>' + v + '</span>';
+    mediceneHTML += '<span style> ' + v + '&emsp;' + ' </span>';
 
     document.body.onclick = function() {
         recognition.start();
         console.log('Ready to receive a Medicene Name');
     }
-}
+});
+
+
+hints.innerHTML = 'Tap/click then say a medicene Name <br><br>' + mediceneHTML + '.';
 
 recognition.onresult = function(event) {
     var medicene = event.results[0][0].transcript;
