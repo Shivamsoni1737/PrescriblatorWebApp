@@ -148,7 +148,19 @@ width:90%;}
   width: auto; height: auto; overflow:auto;
   border:2px solid grey;
 }
-.personal-form, .complaint-form, .treatment-form{background-color: rgb(248,239,255);
+.personal-form, .complaint-form, .treatment-form, .advice-form, .diff-form{background-color: rgb(248,239,255);
   width: auto; height: auto; overflow:auto;
   border:2px solid grey;}
 *{font-family: 'Montserrat', sans-serif;}
+.adl{float:left;
+list-style-type: none;
+width:50%;
+margin-top:4%;
+font-size: 1.7vw;}
+  .dli{float: left;
+  list-style-type: none;
+width:50%;
+margin-top: 4%;
+font-size: 1.7vw;}
+.alink{font-size: 1.2vw;margin-left:20%;}
+.alast{margin-bottom: 5%;}
