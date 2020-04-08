@@ -26,3 +26,141 @@ h6 {
 .btnnobdr {
     border: none;
 } */
+.listelements{float:left;}
+.mainheading{background-color:royalblue;
+color:white;
+text-align:center;
+font-size:2.5vw;;
+padding-top:1.5%;
+padding-bottom:1.5%;
+padding-left:10%;
+width:126%;
+margin-left:-15%;}
+.searchbtn{margin-top:2%;
+  border:1px solid grey;
+    border-radius: 50px;
+  font-size: 1.5vw;
+  background-color: white;
+  padding:1%;
+  padding-top:0.5%;
+  padding-bottom:0.5%;
+margin-right:1%;}
+.btnnobdr{background-color: white;
+border:none;
+font-size: 2vw;}
+
+li.listelements1{float:left;
+margin-right: 10%;
+list-style-type: none;
+font-size:1.7vw;
+
+}
+.li.listelements1 label{float:left;
+}
+
+.input{width:35%;
+margin-left:2%;
+text-align: center;
+
+}
+.w3-btn{margin-top:2%;
+margin-left:5%;
+}
+.exam{margin-top:3%;
+margin-left:1%;}
+.comps{float:left;
+  list-style-type: none;
+}
+.comp{margin-top: 2%;}
+.since{width:17%;}
+.sub1, .sub2, .sub3{margin-top:3%;
+font-size:1vw;}
+.examp{float:left;
+list-style-type: none;}
+.name{width:60%;
+ }
+.exami{margin-left:2%;
+  margin-right: 2%;
+  width:20%;
+  text-align: center;
+}
+div.esec{margin-top:5%;
+}
+
+.one2{margin-left: 15%;
+}
+.one4{margin-left: 7.7%;}
+.examp{font-size:1.7vw;}
+.same{float:left;
+list-style-type: none;
+margin-top:2%;}
+.treatment-form{list-style-type: none;}
+.two2{margin-top:5%;
+margin-left: 0%;}
+.two3{margin-top:5%;}
+.treatment-form{font-size:1.7vw;}
+.align-blue{margin-top:8%;
+margin-left:35%;
+}
+.bluesubmit{background-color:royalblue;
+font-size:3vw;
+padding:3%;
+padding-top: 1.5%;
+padding-bottom:1.5%;
+border:2px solid royalblue;
+border-radius: 70px;
+color:white;
+margin-top:-25%;
+margin-left:-5%;}
+.footer{background-color: rgb(37,17,39);
+font-size: 2vw;
+color:white;
+width:125.5%;
+margin-left: -12.7%;
+margin-top: 3%;
+}
+.foter{margin-left:5%;
+padding-top: 1%;
+padding-bottom:1%;}
+.dt{margin-left:2%;
+margin-right:2%;
+font-size:1.3vw;}
+.tab{width:80%;}
+.t1{margin-left: 15%;}
+.i2{width:55%;
+margin-left:10%;}
+.t2{margin-left:18%;}
+.i3{width:70%;}
+.t3{margin-left:25%;}
+.tab, .i2, .i3{text-align: center;}
+.seci1, .seci2, .seci3{font-size: 1.7vw;
+text-align: center;
+}
+.seci2{margin-left:60%;}
+.seci3{margin-left: 100%;}
+.sub1{margin-left:20%;}
+.sub2{margin-left:80%;
+width:90%;}
+.sub3{margin-left:120%;
+width:90%;}
+.exam{margin-top: 3%;}
+.examination-form{background-color: rgb(248,239,255);
+  width: auto; height: auto; overflow:auto;
+  border:2px solid grey;
+}
+.personal-form, .complaint-form, .treatment-form, .advice-form, .diff-form{background-color: rgb(248,239,255);
+  width: auto; height: auto; overflow:auto;
+  border:2px solid grey;}
+*{font-family: 'Montserrat', sans-serif;}
+.adl{float:left;
+list-style-type: none;
+width:50%;
+margin-top:4%;
+font-size: 1.7vw;}
+  .dli{float: left;
+  list-style-type: none;
+width:50%;
+margin-top: 4%;
+font-size: 1.7vw;}
+.alink{font-size: 1.2vw;margin-left:20%;}
+.alast{margin-bottom: 5%;}
