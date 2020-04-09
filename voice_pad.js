@@ -55,11 +55,10 @@ function ChangePlaceholder(output) {
     console.log(fields[3]);
     console.log(fields[4]);
 
-    if (section == 1) {
-        document.getElementById("name").placeholder = fields[2];
-        document.getElementById("age").placeholder = fields[3];
-        document.getElementById("gender").placeholder = fields[4];
-    }
+    document.getElementById("name").placeholder = fields[2];
+    document.getElementById("age").placeholder = fields[3];
+    document.getElementById("gender").placeholder = fields[4];
+
 }
 
 recognition.onspeechend = function() {
