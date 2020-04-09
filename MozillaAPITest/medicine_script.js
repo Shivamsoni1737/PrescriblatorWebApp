@@ -14,7 +14,35 @@ var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEv
 /* medicine names picked up from:
 https://github.com/openhealthcare/open-formulary
 */
-var medicines = ["Ciprofloxacin", "Topal Antacid Tab", "Buscopan Tab", "Peppermint Oil", "Ranitidine", "Sucralfate Tab"];
+var medicines = ["Syp Calpol",
+    "Cetriz",
+    "Syp Retherma C",
+    "Syp Augmentin",
+    "Syp Taxim",
+    "Syrup Retherma C",
+    "Syrup Augmentin",
+    "Syrup Taxim",
+    "Ascoryl Ls",
+    "Montec Lc",
+    "Oxipod",
+    "Azitral",
+    "Ceff",
+    "Mefast",
+    "Sinnaerest",
+    "Tixylix",
+    "Artegesic",
+    "Orofer",
+    "Clacimax",
+    "Syp Weltone",
+    "Vit A",
+    "Vit D",
+    "Vitamin A",
+    "Vitamin D",
+    "Rinifol",
+    "Oflamac m.",
+    "Normetrogyl",
+    "Gutpro"
+];
 
 /*
 Refer to this while making a grammar: https://www.w3.org/TR/jsgf/
