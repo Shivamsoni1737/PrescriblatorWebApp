@@ -47,14 +47,17 @@ var medicines = ["Syp Calpol",
 /*
 Refer to this while making a grammar: https://www.w3.org/TR/jsgf/
 */
-var grammar = '#JSGF V1.0; grammar colors; public <medicines> = ' + medicines.join('|') + ';'
+
+// var grammar = '#JSGF V1.0; grammar medicenes; public <medicines> = ' + medicines.join('|') + ';'
+
+var grammar = 'public <medicines> = ' + medicines.join('|') + ';'
 
 var recognition = new SpeechRecognition();
 var speechRecognitionList = new SpeechGrammarList();
 speechRecognitionList.addFromString(grammar, 1);
 recognition.grammars = speechRecognitionList;
 recognition.continuous = false;
-recognition.lang = 'en-US';
+recognition.lang = 'en-IN';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
@@ -80,7 +83,7 @@ hints.innerHTML = 'Tap/click any where on the page then say a medicine Name <br>
 recognition.onresult = function(event) {
     var medicine = event.results[0][0].transcript;
     diagnostic.textContent = 'medicine Name heard: ' + medicine + '.';
-    console.log('Confidence: ' + event.results[0][0].confidence);
+    console.log('Confidence: ' + event.results[0][0].confidence + event.results[0][0].transcript);
 }
 
 recognition.onspeechend = function() {
