@@ -31,13 +31,13 @@
                                 <i class="fa fa-refresh refresh"></i>
                             </button>
                         </div>
-                        <div class="personaldetails">
+                        <div class="personaldetails" id="personaldetails" onclick="PatientDetailsSpeak()">
                             <a class="w3-btn">
                                 <h3 class="pdet"><strong>Patient Details </strong><i class="fa fa-angle-down"></i></h3>
                             </a>
 
                             <ul class="personal-form form">
-                              <br><br>
+                                <br><br>
                                 <li class="listelements1">
                                     <label for="name"><strong>Name:</strong> </label>
                                     <input class="input name" id="name" size="8" name="name" type="text" placeholder="name">
@@ -54,47 +54,47 @@
                             </ul>
                         </div>
                         <br>
-                        <div class="personaldetails">
+                        <div class="personaldetails" id="complains">
                             <a class="w3-btn">
                                 <h3 class="comp"><strong>Complaints</strong> <i class="fa fa-angle-down"></i></h3>
                             </a>
                             <ul class="complaint-form form">
-                              <br><br>
+                                <br><br>
                                 <li class="comps">
-                                    <input class="seci1" id="name" size="8" name="name" type="text"><br>
+                                    <input class="seci1" id="comp1" size="8" name="comp1" type="text"><br>
                                     <div class="sub1">
-                                    <label for="since">since</label>
-                                    <input class="since" type="text" name="day" id="day" placeholder="00" size="4" maxlength="2">
-                                    <label for="days">days</label>
-                                  </div>
+                                        <label for="since">since</label>
+                                        <input class="since" type="text" name="day1" id="day1" placeholder="00" size="4" maxlength="2">
+                                        <label for="days">days</label>
+                                    </div>
                                 </li>
                                 <li class="comps">
-                                    <input class="seci2" type="text" size="8" name="age" id="age"><br>
+                                    <input class="seci2" type="text" size="8" name="comp2" id="comp2"><br>
                                     <div class="sub2">
-                                    <label for="since">since</label>
-                                    <input class="since" type="text" name="day" id="day" placeholder="00" size="4" maxlength="2">
-                                    <label for="days">days</label>
-                                  </div>
+                                        <label for="since">since</label>
+                                        <input class="since" type="text" name="day2" id="day2" placeholder="00" size="4" maxlength="2">
+                                        <label for="days">days</label>
+                                    </div>
                                 </li>
                                 <li class="comps">
-                                    <input class="seci3" type="text" name="gender" id="gender" size="8"><br>
+                                    <input class="seci3" type="text" name="comp3" id="comp4" size="8"><br>
                                     <div class="sub3">
-                                    <label for="since">since</label>
-                                    <input class="since" type="text" name="day" id="day" placeholder="00" size="4" maxlength="2">
-                                    <label for="days">days</label>
-                                  </div>
+                                        <label for="since">since</label>
+                                        <input class="since" type="text" name="day2" id="day2" placeholder="00" size="4" maxlength="2">
+                                        <label for="days">days</label>
+                                    </div>
                                 </li><br><br>
                                 <br><br><br>
                             </ul>
                         </div>
-<br>
+                        <br>
                         <div class="personaldetails">
                             <a class="w3-btn">
                                 <h3 class="exam"><strong>Examination </strong><i class="fa fa-angle-down"></i></h3>
                             </a>
 
                             <ul class="examination-form form">
-                              <br><br>
+                                <br><br>
                                 <li class="examp one1">
                                     <label for="since"><strong>Pulse rate:</strong></label>
                                     <input class="exami" id="name" size="6" name="name" type="text" maxlength="3" placeholder="72">
@@ -104,17 +104,19 @@
                                     <label for="since"><strong>Temperature:</strong></label>
                                     <input class="exami" type="text" size="6" maxlength="3" placeholder="98" name="age" id="age">
                                     <label for="days">F</label>
-                                </li><br><div class="esec">
-                                <li class="examp one3">
-                                    <label for="since"><strong>Respiratory rate:</strong></label>
-                                    <input class="exami" type="text" name="gender" id="gender" size="6" placeholder="16">
-                                    <label for="days">bpm</label>
-                                </li>
-                                <li class="examp one4">
-                                    <label for="since"><strong>Oxygen Saturation:</strong></label>
-                                    <input class="exami" type="text" name="gender" id="gender" size="6" placeholder="98">
-                                    <label for="days">%</label>
-                                </li></div>
+                                </li><br>
+                                <div class="esec">
+                                    <li class="examp one3">
+                                        <label for="since"><strong>Respiratory rate:</strong></label>
+                                        <input class="exami" type="text" name="gender" id="gender" size="6" placeholder="16">
+                                        <label for="days">bpm</label>
+                                    </li>
+                                    <li class="examp one4">
+                                        <label for="since"><strong>Oxygen Saturation:</strong></label>
+                                        <input class="exami" type="text" name="gender" id="gender" size="6" placeholder="98">
+                                        <label for="days">%</label>
+                                    </li>
+                                </div>
                                 <br><br><br>
                                 <br>
                             </ul>
@@ -147,16 +149,16 @@
                                     <input class="input name" id="name" size="5" name="name" type="text" placeholder="USG"><br>
                                     <a href="#" class="alink ">See More</a>
                                 </li>
-<br><br><br>
-<br>
+                                <br><br><br>
+                                <br>
                             </ul>
                         </div>
-<br><br>
+                        <br><br>
                         <div class="personaldetails">
                             <a class="w3-btn">
                                 <h3 class="diffd"><strong>Differential Diagnosis </strong><i class="fa fa-angle-down"></i></h3>
                             </a>
-<br>
+                            <br>
                             <ul class="diff-form form">
                                 <br>
                                 <li class="dli">
@@ -180,7 +182,7 @@
                                 <h3><strong>Treatment </strong><i class="fa fa-angle-down"></i></h3>
                             </a>
                             <ul class="treatment-form form">
-                              <br>
+                                <br>
                                 <li>
                                     <ul>
                                         <li class="same">
@@ -198,7 +200,7 @@
                                     </ul>
                                 </li><br>
                                 <li>
-                                    <ul  class="two2">
+                                    <ul class="two2">
                                         <li class="same">
                                             <input class="tab" type="text" name="" id="" size="8">
                                             <label class="dt t1" for="">Capsules/Tablet/Syrup/Injection</label>
@@ -244,6 +246,9 @@
             </div>
         </div>
     </section>
+
+    <script src="voice_pad.js"></script>
+
 </body>
 
 </html>
