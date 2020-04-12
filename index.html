@@ -23,10 +23,12 @@
                 <div class="container">
                     <form action="" class="form overallform">
                         <div class="leftbuttons">
-                            <button class="searchbtn btnn">
-                                <i class="fa fa-search"></i>
-                                Insert UID
-                            </button>
+                          <form>
+                            <input class="searchbtn btnn" for="UID" id="uid" name="uid" placeholder="Insert UID">
+                            <button id="sicon">    <i class="fa fa-search"></i></button>
+
+                            </input>
+                          </form>
                             <button class="btnn btnnobdr">
                                 <i class="fa fa-refresh refresh"></i>
                             </button>
@@ -80,7 +82,7 @@
                                     <input class="seci3" type="text" name="comp3" id="comp4" size="8"><br>
                                     <div class="sub3">
                                         <label for="since">since</label>
-                                        <input class="since" type="text" name="day2" id="day2" placeholder="00" size="4" maxlength="2">
+                                        <input class="since" type="text" name="day3" id="day3" placeholder="00" size="4" maxlength="2">
                                         <label for="days">days</label>
                                     </div>
                                 </li><br><br>
@@ -235,7 +237,7 @@
                             </ul>
                         </div><br><br>
                         <div class="align-blue">
-                            <input class="bluesubmit" type="submit" value="Create Prescription">
+                          <input class="bluesubmit" type="submit" value="Create Prescription">
                         </div>
                     </form>
                 </div>
