@@ -42,13 +42,17 @@ margin-left:-15%;}
   font-size: 1.5vw;
   background-color: white;
   padding:1%;
+  width: 14.5%;
   padding-top:0.5%;
   padding-bottom:0.5%;
-margin-right:1%;}
+margin-right:1%;
+text-align: center;}
 .btnnobdr{background-color: white;
 border:none;
-font-size: 2vw;}
-
+font-size: 2.5vw;
+}
+.leftbuttons{margin-top:1.5%;
+margin-bottom:2.5%;}
 li.listelements1{float:left;
 margin-right: 10%;
 list-style-type: none;
@@ -72,7 +76,8 @@ margin-left:1%;}
   list-style-type: none;
 }
 .comp{margin-top: 2%;}
-.since{width:17%;}
+.since{width:20%;
+text-align: center;}
 .sub1, .sub2, .sub3{margin-top:3%;
 font-size:1vw;}
 .examp{float:left;
@@ -103,6 +108,7 @@ margin-left: 0%;}
 margin-left:35%;
 }
 .bluesubmit{background-color:royalblue;
+  font-weight:bold;
 font-size:3vw;
 padding:3%;
 padding-top: 1.5%;
@@ -126,7 +132,7 @@ padding-bottom:1%;}
 margin-right:2%;
 font-size:1.3vw;}
 .tab{width:80%;}
-.t1{margin-left: 15%;}
+.t1{margin-left: 10%;}
 .i2{width:55%;
 margin-left:10%;}
 .t2{margin-left:18%;}
@@ -164,3 +170,76 @@ margin-top: 4%;
 font-size: 1.7vw;}
 .alink{font-size: 1.2vw;margin-left:20%;}
 .alast{margin-bottom: 5%;}
+#sicon{background-color: white;
+border:none;
+font-size:2.5vw;
+margin-right: 2.5%;}
+@media screen and (max-width:600px)
+{
+  .searchbtn{font-size:7vw;
+  width:60%;
+margin-top:10%;}
+  .mainheading{font-size:8vw;}
+  .fa-search {font-size:7vw;}
+  .fa-refresh{font-size: 7vw;}
+  .listelements1{width:100%;
+    margin-top:2%;
+  }
+  .input{font-size:4vw;
+margin-bottom:10%;
+  }
+  .age {margin-left:15%;}
+  .pname{margin-left:8%;
+  width:55%;}
+  .gender{margin-bottom: 25%;}
+  #name{font-size: 4vw;}
+  #age{font-size: 4vw;}
+  #gender{font-size: 4vw;}
+.comps{
+float:none;}
+.seci1{width:80%;
+margin-left:2%;
+font-size: 6vw;}
+.sub1{width:100%;margin-left:2%;font-size: 4vw;margin-left:14%;margin-bottom:20%;}
+.seci2{width:80%;margin-left:2%;font-size: 6vw;}
+.sub2{width:100%;margin-left:2%;font-size: 4vw;margin-left:14%;margin-bottom:20%;}
+.seci3{width:80%;margin-left:2%;font-size: 6vw;}
+.sub3{width:100%;margin-left:2%;font-size: 4vw;margin-left:14%;margin-bottom:-42%;}
+.parameters{font-size:4vw;
+margin-left:-10%;}
+.one2{margin-left:0%;
+}
+.one4{margin-left:0%;
+}
+.unit{font-size:3.5vw;}
+.exami{margin-bottom:10%;}
+.name{width:170%;margin-left: 0%;
+font-size: 4vw;}
+.adl {float:none;
+}
+.dli {float:none;
+}
+.alink{font-size:3vw;
+margin-left:60%;
+margin-right:-30%;
+}
+.sm1{margin-bottom: 15%;}
+.sm3{margin-bottom: 15%;}
+.alast{ margin-bottom: -30%;}
+.diff-form{height:250px;}
+.tab{width:103%;
+margin-left:-30%;
+font-size:4vw;
+margin-top:15%;}
+.dt{font-size:3.5vw;
+}
+.t1{margin-left:-30%;}
+.t2{margin-left:5%}
+.i2{font-size: 4vw;margin-left: 0%;}
+  .i3{font-size: 4vw;}
+  .t3{margin-left:20%;
+  margin-bottom:10%;}
+  .bluesubmit{font-size:8vw;
+  margin-left:-70%;}
+  .foter{font-size: 5vw;}
+}
